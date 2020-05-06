@@ -1,0 +1,34 @@
+@import "./_sec_one";
+@import "./_sec_two";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* one section to rule them all */
+.description {
+    /* position: absolute;
+    top: 40%;
+    left: 20%; */
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 500;
+    line-height: 2em;
+    font-size: 1.2em;
+    width: 50%;
+    margin-left: 10%;
+    padding: 0.5em;
+    padding-left: 0;
+  }
+  p {
+    margin: 50px 0px;
+    text-align: justify;
+  }
+
+/* .section img {
+  border-radius: 50%;
+  width: 50vmin;
+  height: 50vmin;
+} */
+

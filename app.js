@@ -5,10 +5,12 @@ new fullpage('#fullpage', {
     onLeave: function(origin, destination, direction){
         const section = destination.item;
         const title = section.querySelector('h1');
-        const parasec = section.querySelectorAll('p');
+        const parasec = section.querySelectorAll('.description');
         const t1= new TimelineMax({delay:0.4});
         t1.fromTo(title,0.5,{y:'50',opacity:0},{y:'0',opacity:1})
         .fromTo(parasec,0.5,{x:'-50',opacity:0},{x:'0',opacity:1});
+        
+        console.log(origin.item);
         if(destination.index === 1){
             const img_mountain = document.querySelectorAll('.type-mountain');
             console.log(img_mountain);

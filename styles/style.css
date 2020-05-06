@@ -1,0 +1,173 @@
+.section {
+  position: relative;
+}
+
+.section h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-family: "Limelight", cursive;
+  font-size: 1.5em;
+}
+
+.s1 p {
+  background-color: rgba(102, 152, 209, 0.397);
+}
+
+.s1 .s1-container {
+  position: relative;
+  margin: auto 5em;
+  padding-left: 0;
+  top: 1em;
+  z-index: 1;
+}
+
+.s1 nav {
+  padding-left: 0;
+}
+
+.s1 nav div {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-right: 0;
+}
+
+.s1 .nav-item {
+  padding: 0 18px;
+}
+
+.s1 h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#1b1b2f), to(#1f4068));
+  background: linear-gradient(to bottom right, #1b1b2f, #1f4068);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s1 .mountain {
+  position: absolute;
+  border-radius: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.s1 .d-flex {
+  margin: 5rem 5rem 0 5rem;
+  padding: 5rem 0;
+}
+
+.s1 .d-flex .description {
+  color: #f9dba6;
+  position: relative;
+  margin-left: 0;
+  z-index: 1;
+}
+
+.s1 .d-flex .login {
+  position: relative;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 4px #ebebeb, -5px -5px 4px #ffffff;
+          box-shadow: 5px 5px 4px #ebebeb, -5px -5px 4px #ffffff;
+  margin-right: 42px;
+  height: 25em;
+  /* height and width of login platform without which the containing element collapse */
+  width: 25em;
+  text-align: center;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.s1 .d-flex .login form {
+  width: 80%;
+  height: 100%;
+}
+
+.s1 .d-flex .login p {
+  background-color: initial;
+}
+
+.s1 .d-flex .login h1 {
+  position: initial;
+  top: initial;
+  left: initial;
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+.s1 .d-flex .login img {
+  height: 7vmin;
+  width: 7vmin;
+}
+
+.s2 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#f8e1f4));
+  background: linear-gradient(to bottom right, #ffffff, #f8e1f4);
+}
+
+.s2 h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#e28bdb), to(#b62fc2));
+  background: linear-gradient(to bottom right, #e28bdb, #b62fc2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.type-mountain {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
+  width: 50vmin;
+  height: 50vmin;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* one section to rule them all */
+.description {
+  /* position: absolute;
+    top: 40%;
+    left: 20%; */
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 500;
+  line-height: 2em;
+  font-size: 1.2em;
+  width: 50%;
+  margin-left: 10%;
+  padding: 0.5em;
+  padding-left: 0;
+}
+
+p {
+  margin: 50px 0px;
+  text-align: justify;
+}
+
+/* .section img {
+  border-radius: 50%;
+  width: 50vmin;
+  height: 50vmin;
+} */
+/*# sourceMappingURL=style.css.map */

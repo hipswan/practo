@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Limelight&display=swap"
       rel="stylesheet"
@@ -25,7 +25,7 @@
   <body>
     <div id="fullpage">
       <section class="section s1">
-        <div class="s1-container">
+        <header class="s1-container">
           <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">Uptrek</a>
 
@@ -41,25 +41,25 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="">Contact</a>
+                  <a class="nav-link" href="#second">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Pricing</a>
+                  <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Download</a>
+                  <a class="nav-link" href="#">Download</a>
                 </li>
               </ul>
             </div>
           </nav>
-        </div>
-        <img
+        </header>
+        <img class="mountain"
           src="./assests/aman-dhakal-YkWz_coLm84-unsplash.jpg"
           alt="Mountain"
         />
         <h1>Welcome! Mountaineer.</h1>
 
-        <section class="d-flex d-flex justify-content-between">
+        <div  class="d-flex justify-content-between">
           <div class="description">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
@@ -74,45 +74,43 @@
           </div>
           <div class="login">
             <form class="form-signin">
-              <img
-                class="mb-4"
+              <img class="mb-2 mt-2"
                 src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg"
                 alt="" 
                 
               />
-              <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-              <label for="inputEmail" class="sr-only">Email address</label>
-              <input
+              <h1 class="mb-4 mt-4">Please sign in</h1>
+              <input 
                 type="email"
                 id="inputEmail"
-                class="form-control"
+                class="form-control mb-2 mt-2"
                 placeholder="Email address"
                 required
                 autofocus
               />
-              <label for="inputPassword" class="sr-only">Password</label>
-              <input
+             
+              <input 
                 type="password"
                 id="inputPassword"
-                class="form-control"
+                class="form-control mb-2 mt-2"
                 placeholder="Password"
                 required
               />
-              <div class="checkbox mb-3">
+              <div class="checkbox mb-1 mt-1">
                 <label>
                   <input type="checkbox" value="remember-me" /> Remember me
                 </label>
               </div>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">
+              <button class="mb-4 mt-2 btn btn-lg btn-primary btn-block" type="submit">
                 Sign in
               </button>
-              <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+              <!-- <p class="mt-5 mb-1 text-muted">&copy; 2017-2019</p> -->
             </form>
           </div>
-        </section>
+        </div>
       </section>
 
-      <section class="section s2">
+      <section  id="second" class="section s2 ">
         <h1>Mountain we will conquer.</h1>
         <div class="description">
           <p>
