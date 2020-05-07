@@ -3,14 +3,20 @@
   padding: auto 0;
 }
 
+.s1 .flip-box {
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
 .s1 h1 {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0;
   right: 0;
   margin: auto 5rem;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
   background: -webkit-gradient(linear, left top, left bottom, from(#ffb367), to(#ffe2bc));
   background: linear-gradient(to bottom, #ffb367, #ffe2bc);
   -webkit-background-clip: text;
@@ -19,7 +25,7 @@
 
 .s1 .row {
   position: absolute;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
   height: auto;
@@ -35,7 +41,7 @@
 
 .s1 .row .login {
   border-radius: 50px;
-  background: #ffe2bc;
+  background: #e43f5a;
   height: 25em;
   width: 25em;
   margin: 0 auto;
@@ -73,6 +79,31 @@
 }
 
 @media screen and (max-width: 992px) {
+  .s1 .flip-box {
+    position: relative;
+    top: -20%;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  .s1 .flip-box-inner {
+    position: relative;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .s1 .flip-box-front,
+  .s1 .flip-box-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .s1 .flip-box-back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
   .s1 h1 {
     margin: auto 5vw;
     padding-left: 1rem;
@@ -82,13 +113,10 @@
     margin: auto 5vw;
   }
   .s1 .row .heading {
-    height: 60vh;
+    height: 70vh;
   }
   .s1 .row .heading p {
     text-align: left;
-  }
-  .s1 .row .col-lg-5 {
-    display: none;
   }
 }
 

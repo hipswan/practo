@@ -45,50 +45,52 @@
   <div id="fullpage">
     <section class="section s1">
       <h1>Welcome! Mountaineer.</h1>
-      <div class="row">
-        <div class="col-12 col-lg-7">
-          <div class="heading">
-            <p>“
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              odio totam, autem veritatis iste earum iure numquam ratione ipsum
-              dolore perspiciatis facilis et laboriosam alias eos dolorum
-              suscipit distinctio error!
-              ”
-            </p>
+      <div class="flip-box">
+        <div class="row flip-box-inner">
+          <div class="col-12 col-lg-7  flip-box-front">
+            <div class="heading">
+              <p>“
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                odio totam, autem veritatis iste earum iure numquam ratione ipsum
+                dolore perspiciatis facilis et laboriosam alias eos dolorum
+                suscipit distinctio error!
+                ”
+              </p>
 
-            <button class="btn btn-lg btn-primary .d-none">
-              login
-            </button>
-
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-5">
-          <div class="login">
-            <form class="form-signin">
-              <img class="mb-2 mt-2" src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" />
-              <h1 class="mb-4 mt-4">Please sign in</h1>
-              <input type="email" id="inputEmail" class="form-control mb-2 mt-2" placeholder="Email address" required
-                autofocus />
-
-              <input type="password" id="inputPassword" class="form-control mb-2 mt-2" placeholder="Password"
-                required />
-              <div class="checkbox mb-1 mt-1">
-                <label>
-                  <input type="checkbox" value="remember-me" /> Remember me
-                </label>
-              </div>
-              <button class="mb-4 mt-2 btn btn-lg btn-primary btn-block" type="submit">
-                Sign in
+              <button id="login" class="btn btn-lg btn-primary .d-none">
+                login
               </button>
-              <p class="mt-5 mb-1 text-muted">&copy; 2017-2019</p>
-            </form>
+
+
+            </div>
+
           </div>
+
+          <div class="col-lg-5 flip-box-back">
+            <div class="login">
+              <form class="form-signin">
+                <img class="mb-2 mt-2" src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg"
+                  alt="" />
+                <h1 class="mb-4 mt-4">Please sign in</h1>
+                <input type="email" id="inputEmail" class="form-control mb-2 mt-2" placeholder="Email address" required
+                  autofocus />
+
+                <input type="password" id="inputPassword" class="form-control mb-2 mt-2" placeholder="Password"
+                  required />
+                <div class="checkbox mb-1 mt-1">
+                  <label>
+                    <input type="checkbox" value="remember-me" /> Remember me
+                  </label>
+                </div>
+                <button class="mb-4 mt-2 btn btn-lg btn-primary btn-block" type="submit">
+                  Sign in
+                </button>
+                <p class="mt-5 mb-1 text-muted">&copy; 2017-2019</p>
+              </form>
+            </div>
+          </div>
+
         </div>
-
-
       </div>
 
     </section>

@@ -21,5 +21,12 @@ new fullpage('#fullpage', {
     },
 });
 
-
+$("#login").on('click',(event)=>{
+    const t2= new TimelineMax();
+    t2.fromTo($(".flip-box-inner")[0], 0.2, 
+        {rotationY:0},
+        {rotationY:-180});
+    
+  
+});
 
