@@ -21,10 +21,5 @@ new fullpage('#fullpage', {
     },
 });
 
-$("#login").on('click',(events)=>{
-    const t2= new TimelineMax();
-    t2.fromTo(events.target, 0.7, {x:100},{opacity:.3});
-    console.log($(this));
-  
-});
+
 

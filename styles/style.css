@@ -5,10 +5,12 @@
 
 .s1 h1 {
   position: absolute;
-  top: 15vmin;
-  left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto 5rem;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
   background: -webkit-gradient(linear, left top, left bottom, from(#ffb367), to(#ffe2bc));
   background: linear-gradient(to bottom, #ffb367, #ffe2bc);
   -webkit-background-clip: text;
@@ -16,9 +18,10 @@
 }
 
 .s1 .row {
-  overflow: hidden;
   position: absolute;
-  bottom: 3em;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   height: auto;
   width: auto;
   margin: auto 5em;
@@ -67,6 +70,22 @@
 .s1 .row .login img {
   height: 7vmin;
   width: 7vmin;
+}
+
+@media screen and (max-width: 992px) {
+  .col-lg-5 {
+    display: none;
+  }
+  .heading {
+    height: 60vh;
+  }
+  .s1 h1 {
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .s1 .row p {
+    text-align: left;
+  }
 }
 
 .s2 {
@@ -146,7 +165,6 @@ footer {
   font-size: 1.5em;
 }
 
-/* one section to rule them all */
 /* .section img {
   border-radius: 50%;
   width: 50vmin;

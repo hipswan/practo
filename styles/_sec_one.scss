@@ -13,18 +13,20 @@
 
   h1 {
     position: absolute;
-    top: 15vmin;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    top: 20%;
+    left: 0;
+    right:0;
+    margin:auto 5rem;
+    transform: translateY(-20%);
     background: linear-gradient(to bottom, #ffb367, #ffe2bc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .row {
-    overflow: hidden;
     position:absolute;
-    bottom:3em;
+    top:50%;
+    transform:translateY(-30%);
     height: auto;
     width: auto;
     margin: auto 5em;    
@@ -32,7 +34,6 @@
       color: #ffe2bc;
       font-family: "Montserrat", sans-serif;
       font-size: 1.5em;
-      
     }
     .login {
       border-radius: 50px;
@@ -56,7 +57,28 @@
         width: 7vmin;
       }
 
+
       @include flexbox(column);
+    }
+  } 
+  }
+
+@media screen and (max-width: 992px) {
+  .col-lg-5 {
+    display: none;
+  }
+  .heading{
+    height: 60vh;
+  }
+  .s1{
+    h1{
+      padding-left:1rem;
+      text-align: left;
+    }
+    .row{
+      p{
+        text-align: left;
+      }
     }
   }
 }
