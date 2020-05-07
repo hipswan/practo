@@ -1,101 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Limelight&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="fullpage">
-      <section class="section s1">
-        <header class="s1-container">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Uptrek</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo02"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Pridi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Coda|Montserrat:800,800i|Open+Sans:700&display=swap" rel="stylesheet">
+</head>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#second">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Download</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-        <img class="mountain"
-          src="./assests/aman-dhakal-YkWz_coLm84-unsplash.jpg"
-          alt="Mountain"
-        />
-        <h1>Welcome! Mountaineer.</h1>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Uptrek</a>
 
-        <div  class="d-flex justify-content-between">
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              architecto.
-            </p>
-            <p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#second">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Download</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="fullpage">
+    <section class="section s1">
+      <h1>Welcome! Mountaineer.</h1>
+
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-4 col-lg-6">
+          <div class="heading">
+            <p>“
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
               odio totam, autem veritatis iste earum iure numquam ratione ipsum
               dolore perspiciatis facilis et laboriosam alias eos dolorum
               suscipit distinctio error!
+              ”
             </p>
+            <button id="login" class="btn btn-lg btn-primary btn-block">
+              login
+            </button>
           </div>
-          <div class="login">
+
+        </div>
+        
+        <div class="col-12 col-md-4 col-lg-6">
+          <div class="login ">
             <form class="form-signin">
-              <img class="mb-2 mt-2"
-                src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg"
-                alt="" 
-                
-              />
+              <img class="mb-2 mt-2" src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" />
               <h1 class="mb-4 mt-4">Please sign in</h1>
-              <input 
-                type="email"
-                id="inputEmail"
-                class="form-control mb-2 mt-2"
-                placeholder="Email address"
-                required
-                autofocus
-              />
-             
-              <input 
-                type="password"
-                id="inputPassword"
-                class="form-control mb-2 mt-2"
-                placeholder="Password"
-                required
-              />
+              <input type="email" id="inputEmail" class="form-control mb-2 mt-2" placeholder="Email address" required
+                autofocus />
+
+              <input type="password" id="inputPassword" class="form-control mb-2 mt-2" placeholder="Password"
+                required />
               <div class="checkbox mb-1 mt-1">
                 <label>
                   <input type="checkbox" value="remember-me" /> Remember me
@@ -108,76 +84,69 @@
             </form>
           </div>
         </div>
-      </section>
 
-      <section  id="second" class="section s2 ">
-        <h1>Mountain we will conquer.</h1>
-        <div class="description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-            architecto.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio
-            totam, autem veritatis iste earum iure numquam ratione ipsum dolore
-            perspiciatis facilis et laboriosam alias eos dolorum suscipit
-            distinctio error!
-          </p>
-        </div>
-        <img
-          class="type-mountain"
-          src="./assests/LandscapeMountains0213_2_download600.jpg"
-          alt="mountain"
-        />
-        <img
-          class="type-mountain"
-          src="./assests/mountains-landscape-graphy-of-mountain.jpg"
-          alt="mountain"
-        />
-      </section>
 
-      <section class="section s3">
-        <h1>Welcome! Mountaineer.<span>🗻</span></h1>
-        <div class="description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-            architecto.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio
-            totam, autem veritatis iste earum iure numquam ratione ipsum dolore
-            perspiciatis facilis et laboriosam alias eos dolorum suscipit
-            distinctio error!
-          </p>
-        </div>
-      </section>
-    </div>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
-      integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
-      integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="./fullpage.min.js"></script>
-    <script type="text/javascript" src="./app.js"></script>
-  </body>
+      </div>
+
+    </section>
+
+    <section id="second active" class="section s2 ">
+      <h1>Mountain we will conquer.</h1>
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+          architecto.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio
+          totam, autem veritatis iste earum iure numquam ratione ipsum dolore
+          perspiciatis facilis et laboriosam alias eos dolorum suscipit
+          distinctio error!
+        </p>
+      </div>
+      <img class="type-mountain" src="./assests/LandscapeMountains0213_2_download600.jpg" alt="mountain" />
+      <img class="type-mountain" src="./assests/mountains-landscape-graphy-of-mountain.jpg" alt="mountain" />
+    </section>
+
+    <section class="section s3">
+      <h1>Welcome! Mountaineer.<span>🗻</span></h1>
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+          architecto.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio
+          totam, autem veritatis iste earum iure numquam ratione ipsum dolore
+          perspiciatis facilis et laboriosam alias eos dolorum suscipit
+          distinctio error!
+        </p>
+      </div>
+      <footer>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, soluta!</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quae enim nulla libero rerum neque iure
+          placeat animi a recusandae.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis corporis eligendi omnis praesentium?
+          Quibusdam, consectetur.</div>
+      </footer>
+    </section>
+
+  </div>
+
+
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+  integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+  integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./fullpage.min.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+
 </html>

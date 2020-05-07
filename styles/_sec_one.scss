@@ -2,87 +2,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: $direction;
+  flex-direction: column;
 }
-
-.section {
-  position: relative;
+.s1 {
+  background-color: #00263b;
+  padding: auto 0;
+  // p {
+  //   background-color: rgba(102, 152, 209, 0.397);
+  // }
 
   h1 {
     position: absolute;
-    top: 20%;
+    top: 15vmin;
     left: 50%;
-    transform: translate(-50%);
-    font-family: "Limelight", cursive;
-    font-size: 1.5em;
-  }
-}
-
-.s1 {
-  p {
-    background-color: rgba(102, 152, 209, 0.397);
-  }
-  .s1-container {
-    position: relative;
-    margin: auto 5em;
-    padding-left: 0;
-    top: 1em;
-    z-index: 1;
-  }
-  nav {
-    padding-left: 0;
-
-    div {
-      align-items: left;
-      margin-right: 0;
-    }
-  }
-
-  .nav-item {
-    padding: 0 18px;
-  }
-
-  h1 {
-    background: linear-gradient(to bottom right, #1b1b2f, #1f4068);
+    transform: translate(-50%, -20%);
+    background: linear-gradient(to bottom, #ffb367, #ffe2bc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .mountain {
-    position: absolute;
-    border-radius: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .d-flex {
-    margin: 5rem 5rem 0 5rem;
-    padding: 5rem 0;
-    .description {
-      color: #f9dba6;
-      position: relative;
-      margin-left: 0;
-      z-index: 1;
+  .row {
+    overflow: hidden;
+    position:absolute;
+    bottom:3em;
+    height: auto;
+    width: auto;
+    margin: auto 5em;    
+    .heading {
+      color: #ffe2bc;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5em;
+      
     }
     .login {
-      position: relative;
-
       border-radius: 50px;
-      background: #ffffff;
-      box-shadow: 5px 5px 4px #ebebeb, -5px -5px 4px #ffffff;
-      margin-right: 42px;
-      height: 25em; /* height and width of login platform without which the containing element collapse */
-      width: 25em;
-      text-align: center;
-      z-index: 1;
+      background: #ffe2bc ;
+      height: 25em;
+      width:25em;
+      margin: 0 auto;
       form {
         width: 80%;
         height: 100%;
       }
-      p {
-        background-color: initial;
-      }
+     
       h1 {
         position: initial;
         top: initial;
