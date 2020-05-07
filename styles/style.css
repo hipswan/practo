@@ -73,18 +73,22 @@
 }
 
 @media screen and (max-width: 992px) {
-  .col-lg-5 {
-    display: none;
-  }
-  .heading {
-    height: 60vh;
-  }
   .s1 h1 {
+    margin: auto 5vw;
     padding-left: 1rem;
     text-align: left;
   }
-  .s1 .row p {
+  .s1 .row {
+    margin: auto 5vw;
+  }
+  .s1 .row .heading {
+    height: 60vh;
+  }
+  .s1 .row .heading p {
     text-align: left;
+  }
+  .s1 .row .col-lg-5 {
+    display: none;
   }
 }
 
@@ -119,6 +123,12 @@ header {
           transform: translateY(-5%);
   z-index: 1;
   margin: auto 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    margin: auto 5vw;
+  }
 }
 
 footer {

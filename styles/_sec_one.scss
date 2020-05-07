@@ -15,8 +15,8 @@
     position: absolute;
     top: 20%;
     left: 0;
-    right:0;
-    margin:auto 5rem;
+    right: 0;
+    margin: auto 5rem;
     transform: translateY(-20%);
     background: linear-gradient(to bottom, #ffb367, #ffe2bc);
     -webkit-background-clip: text;
@@ -24,12 +24,12 @@
   }
 
   .row {
-    position:absolute;
-    top:50%;
-    transform:translateY(-30%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
     height: auto;
     width: auto;
-    margin: auto 5em;    
+    margin: auto 5em;
     .heading {
       color: #ffe2bc;
       font-family: "Montserrat", sans-serif;
@@ -37,15 +37,15 @@
     }
     .login {
       border-radius: 50px;
-      background: #ffe2bc ;
+      background: #ffe2bc;
       height: 25em;
-      width:25em;
+      width: 25em;
       margin: 0 auto;
       form {
         width: 80%;
         height: 100%;
       }
-     
+
       h1 {
         position: initial;
         top: initial;
@@ -57,28 +57,31 @@
         width: 7vmin;
       }
 
-
       @include flexbox(column);
     }
-  } 
   }
+}
 
 @media screen and (max-width: 992px) {
-  .col-lg-5 {
-    display: none;
-  }
-  .heading{
-    height: 60vh;
-  }
-  .s1{
-    h1{
-      padding-left:1rem;
+  .s1 {
+    h1 {
+      margin: auto 5vw;
+      padding-left: 1rem;
       text-align: left;
     }
-    .row{
-      p{
-        text-align: left;
+
+    .row {
+      margin: auto 5vw;
+      .heading {
+        height: 60vh;
+        p {
+          text-align: left;
+        }
       }
+      .col-lg-5 {
+        display: none;
+      }
+      
     }
   }
 }

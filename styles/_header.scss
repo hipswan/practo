@@ -10,6 +10,8 @@ header {
     margin:auto 5rem; 
    
 }
-// @media screen and (max-width= ){
-
-// }
+@media screen and (max-width:992px ){
+    header{
+        margin:auto 5vw;
+    }
+}
